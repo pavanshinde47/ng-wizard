@@ -13,7 +13,9 @@
     "test": "ng test ng-wizard",
     "lint": "ng lint ng-wizard"
   },
-  "private": true,
+   "publishConfig": {
+    "access": "restricted"
+  },
   "dependencies": {
     "@angular/animations": "^19.2.10",
     "@angular/common": "^19.2.10",
