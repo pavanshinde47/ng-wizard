@@ -28,9 +28,10 @@ import {
 } from '../../utils/interfaces';
 
 @Component({
-  selector: 'ng-wizard',
-  templateUrl: './ng-wizard.component.html',
-  styleUrls: ['./ng-wizard.component.scss'],
+    selector: 'ng-wizard',
+    templateUrl: './ng-wizard.component.html',
+    styleUrls: ['./ng-wizard.component.scss'],
+    standalone: false
 })
 export class NgWizardComponent implements OnDestroy, AfterContentInit {
   @ContentChildren(NgWizardStep)

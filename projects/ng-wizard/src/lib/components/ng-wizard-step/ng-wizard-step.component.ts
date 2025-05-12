@@ -10,15 +10,16 @@ import { STEP_STATE } from '../../utils/enums';
 import { NgWizardStep } from '../../utils/interfaces';
 
 @Component({
-  selector: 'ng-wizard-step',
-  templateUrl: './ng-wizard-step.component.html',
-  styleUrls: ['./ng-wizard-step.component.scss'],
-  providers: [
-    {
-      provide: NgWizardStep,
-      useExisting: forwardRef(() => NgWizardStepComponent),
-    },
-  ],
+    selector: 'ng-wizard-step',
+    templateUrl: './ng-wizard-step.component.html',
+    styleUrls: ['./ng-wizard-step.component.scss'],
+    providers: [
+        {
+            provide: NgWizardStep,
+            useExisting: forwardRef(() => NgWizardStepComponent),
+        },
+    ],
+    standalone: false
 })
 export class NgWizardStepComponent extends NgWizardStep implements OnInit {
   @ViewChild(NgWizardStepContentDirective, { static: true })

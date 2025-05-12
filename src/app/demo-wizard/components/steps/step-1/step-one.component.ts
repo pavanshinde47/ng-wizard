@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { of } from 'rxjs';
 
 @Component({
-  selector: 'app-step-one',
-  templateUrl: './step-one.component.html',
-  styleUrls: ['./step-one.component.scss'],
+    selector: 'app-step-one',
+    templateUrl: './step-one.component.html',
+    styleUrls: ['./step-one.component.scss'],
+    standalone: false
 })
 export class StepOneComponent {
   validateEntryToStep() {

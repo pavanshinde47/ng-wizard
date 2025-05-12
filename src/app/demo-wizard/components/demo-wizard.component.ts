@@ -12,9 +12,10 @@ import {
 } from '../services/demo-wizard.service';
 
 @Component({
-  selector: 'app-demo-wizard',
-  templateUrl: './demo-wizard.component.html',
-  styleUrls: ['./demo-wizard.component.scss'],
+    selector: 'app-demo-wizard',
+    templateUrl: './demo-wizard.component.html',
+    styleUrls: ['./demo-wizard.component.scss'],
+    standalone: false
 })
 export class DemoWizardComponent implements OnInit {
   config: NgWizardConfig;
