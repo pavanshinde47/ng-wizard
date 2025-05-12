@@ -1,6 +1,6 @@
 {
-  "name": "demo",
-  "version": "0.0.0",
+  "name": "@47billion/ng-wizard",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o --port=4228",
